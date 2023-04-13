@@ -10,4 +10,4 @@ function ListGroup () {
     );
 }
 
-export default ListGroup;
+export {ListGroup};
