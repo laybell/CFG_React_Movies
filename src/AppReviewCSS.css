@@ -1,0 +1,37 @@
+/* App Review Page CSS
+*/
+body{
+    background: #BB0522;
+    background: -moz-radial-gradient(center, #BB0522 0%, #CB2424 50%, #752C37 100%);
+    background: -webkit-radial-gradient(center, #BB0522 0%, #CB2424 50%, #752C37 100%);
+    background: radial-gradient(ellipse at center, #BB0522 0%, #CB2424 50%, #752C37 100%);
+    }
+
+/* classes */
+
+.central{
+    display: flex;
+    justify-content: space-between;
+}
+
+.LHS{
+    
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 30%;
+    padding-top: 80px;
+      
+}
+
+.RHS{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 40%;
+    height: 30%;
+    padding-top: 80px;
+
+}
+
+

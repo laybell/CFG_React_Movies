@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './CSS Comp.Review/DescBox.css';
 
 function DescBox(props){
 return(
@@ -8,7 +9,7 @@ return(
         <h3>Year: {props.year}</h3>
         <h3>Rating: {props.rating}</h3>
         <h3>Opinion:</h3>
-        <input type='text' placeholder='My favourite part was...'></input>
+        
         
 </div>
 );

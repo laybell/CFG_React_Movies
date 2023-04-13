@@ -1,0 +1,15 @@
+/* SearchBox CSS
+
+import './CSS Comp.Review/SearchBox.css';
+*/
+
+
+.searchBox{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.button{
+    position: absolute;
+    top: 50%;
+}

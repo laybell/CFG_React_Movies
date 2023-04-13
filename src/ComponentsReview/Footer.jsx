@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './CSS Comp.Review/Footer.css';
 
 function Footer(props){
 return(
-    <div>
+    <div class='footer'>
 
-    <p>By Katy and Lea. Last updated {props.date} </p>
+    <p class='footerText'>By Katy and Lea. Last updated {props.date} </p>
 
 </div>
 );
