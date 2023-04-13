@@ -7,8 +7,8 @@ import { Separator } from "./components/Separator.jsx";
 import { Button } from "./components/Button.jsx";
 
 //Poster Images Imports
-import tarzan from './Images/tarzan.png';
-import everything from './Images/everything.jpg';
+import tarzan from './ImagesReview/tarzan.png';
+import everything from './ImagesReview/everything.jpg';
 import banshees from './Images/banshees.';
 import top from './Images/top.';
 import maverick from './Images/maverick.';
