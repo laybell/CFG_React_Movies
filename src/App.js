@@ -1,37 +1,48 @@
-import React, { useState, useEffect } from 'react';
-//import 'bootstrap/dist/css/bootstrap.min.css';
+//import './App.css';
+import { DescBox } from "./components/DescBox.jsx";
+import {Thumbnail} from "./components/Thumbnail.jsx";
+import {Title} from  "./components/Title.jsx";
+import { SearchBox } from "./components/SearchBox.jsx";
+import { Separator } from "./components/Separator.jsx";
+import { Button } from "./components/Button.jsx";
 
+//Poster Images Imports
+import tarzan from './Images/tarzan.png';
+import everything from './Images/everything.jpg';
+import banshees from './Images/banshees.';
+import top from './Images/top.';
+import maverick from './Images/maverick.';
 
-const App = () => {
-	const [movies, setMovies] = useState([        {
-            "Title": "Star Wars: Episode IV - A New Hope",
-            "Year": "1977",
-            "imdbID": "tt0076759",
-            "Type": "movie",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
-        },
-        {
-            "Title": "Star Wars: Episode V - The Empire Strikes Back",
-            "Year": "1980",
-            "imdbID": "tt0080684",
-            "Type": "movie",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
-        },
-        {
-            "Title": "Star Wars: Episode VI - Return of the Jedi",
-            "Year": "1983",
-            "imdbID": "tt0086190",
-            "Type": "movie",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
-        }]);
-	
-	return (
-		<div className='container-fluid movie-app'>
-			<div className='row'>
-                test
-			</div>
-		</div>
-	);
-};
-
-export default App;
+function App () {
+    return (
+        <div className="App">
+             <Title/>
+        <SearchBox/>
+        <br/>
+        <Thumbnail poster={tarzan} ></Thumbnail>  
+        <DescBox title='Tarzan' year='1999'/>
+        <Button/>
+        <br/>
+        <Separator/>
+        <Thumbnail poster={everything}></Thumbnail>  
+        <DescBox title='Everything Everwhere All At Once'
+        year='2022'/>
+        <Button/>
+        <br/>
+        <Separator/>
+        <Thumbnail poster={banshees}></Thumbnail>  
+        <DescBox title='The Banshees of Inisherin' year='2022'/>
+        <Button/>
+        <br/>
+        <Separator/>
+        <Thumbnail poster={top}></Thumbnail>
+        <DescBox title='Top Gun' year='1986'/>
+        <Button/>
+        <br/>
+        <Separator/>
+        <Thumbnail poster={maverick}></Thumbnail>
+        <DescBox title='Top Gun: Maverick' year='2022'/>
+        <Button/>
+        </div>
+    )
+}
