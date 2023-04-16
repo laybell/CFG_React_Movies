@@ -9,9 +9,9 @@ import { Button } from "./components/Button.jsx";
 //Poster Images Imports
 import tarzan from './ImagesReview/tarzan.png';
 import everything from './ImagesReview/everything.jpg';
-import banshees from './Images/banshees.';
-import top from './Images/top.';
-import maverick from './Images/maverick.';
+import banshees from './Images/banshees.jpg';
+import top from './Images/top.jpg';
+import maverick from './Images/maverick.jpg'; 
 
 function App () {
     return (
@@ -46,3 +46,4 @@ function App () {
         </div>
     )
 }
+export default App;

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import "./Button.css";
+import './CSS/Button.css';
 
 const Button = ({ message = "Add to watchlist" }) => {
     return (
@@ -16,4 +16,4 @@ const Button = ({ message = "Add to watchlist" }) => {
     message: PropTypes.string
     }
     
-    export default Button;
+    export {Button};

@@ -7,7 +7,7 @@ return(
     <div class='searchBox'>
 
     <input type='text' placeholder='search here...'></input>
-    <button type='submit'>Search</button>
+    <button type='submit'class='searchButton'>Search</button>
 </div>
 );
 };

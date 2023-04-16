@@ -9,7 +9,7 @@ import './CSS Comp.Review/SearchBox.css';
     padding-top: 5%;
 }
 
-.button{
+.searchButton{
     position: absolute;
     top: 50%;
 }
