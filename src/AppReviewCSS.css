@@ -34,4 +34,12 @@ body{
 
 }
 
+.top-film{
 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration:overline underline;
+    color:black;
+    font-size: medium;
+    text-align: center;
+    padding-top: 7%;
+}

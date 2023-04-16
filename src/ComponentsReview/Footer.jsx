@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './CSS Comp.Review/Footer.css';
 
 function Footer(props){
+
 return(
     <div class='footer'>
 

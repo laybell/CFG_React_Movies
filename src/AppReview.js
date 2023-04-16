@@ -1,3 +1,4 @@
+import {useState} from 'react';
 import './AppReviewCSS.css';
 import { DescBox } from "./ComponentsReview/DescBox.jsx";
 import {Thumbnail} from "./ComponentsReview/Thumbnail.jsx";
@@ -9,14 +10,20 @@ import { Footer } from "./ComponentsReview/Footer.jsx";
 //Poster Images Imports
 import tarzan from './ImagesReview/tarzan.png';
 import everything from './ImagesReview/everything.jpg';
+import banshees from './Images/banshees.jpg';
 
 
 function AppReview() {
+
+  const[topMovie, setTopMovie] = useState("Tarzan");
+  
+
   return (
     <div className="App">
 
         <Title/>
         <SearchBox/>
+        <h1 class='top-film'>Top film is {topMovie}.</h1>
         <div class='central'>
         <br/>
         <div class='LHS'>
@@ -27,7 +34,7 @@ function AppReview() {
         <Thumbnail poster={everything}></Thumbnail>  
         <br/>
         <Separator/>
-        <Thumbnail></Thumbnail>  
+        <Thumbnail poster={banshees}></Thumbnail>  
         </div>
 
         <div class='RHS'> 
@@ -35,11 +42,13 @@ function AppReview() {
         <DescBox title='Tarzan' year='1999'/>
         <br/>
         <Separator/>
-        <DescBox title='Everything Everwhere All At Once'
+        <DescBox title='Everything Everywhere All At Once'
         year='2022'/>
         <br/>
         <Separator/>
-        <DescBox/>
+        <DescBox title='The Banshees of Inisherin'
+        year='2022'/>
+        <br/>
         </div>
         </div>
 
