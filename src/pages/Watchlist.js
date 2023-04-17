@@ -1,19 +1,19 @@
 //import './App.css';
-import { DescBox } from "./components/DescBox.jsx";
-import {Thumbnail} from "./components/Thumbnail.jsx";
-import {Title} from  "./components/Title.jsx";
-import { SearchBox } from "./components/SearchBox.jsx";
-import { Separator } from "./components/Separator.jsx";
-import { Button } from "./components/Button.jsx";
+import { DescBox } from "../components/DescBox.jsx";
+import {Thumbnail} from "../components/Thumbnail.jsx";
+import {Title} from  "../components/Title.jsx";
+import { SearchBox } from "../components/SearchBox.jsx";
+import { Separator } from "../components/Separator.jsx";
+import { Button } from "../components/Button.jsx";
 
 //Poster Images Imports
-import tarzan from './ImagesReview/tarzan.png';
-import everything from './ImagesReview/everything.jpg';
-import banshees from './Images/banshees.jpg';
-import top from './Images/top.jpg';
-import maverick from './Images/maverick.jpg'; 
+import tarzan from '../ImagesReview/tarzan.png';
+import everything from '../ImagesReview/everything.jpg';
+import banshees from '../Images/banshees.jpg';
+import top from '../Images/top.jpg';
+import maverick from '../Images/maverick.jpg'; 
 
-function App () {
+function Watchlist () {
     return (
         <div className="App">
              <Title/>
@@ -46,4 +46,4 @@ function App () {
         </div>
     )
 }
-export default App;
+export default Watchlist;
