@@ -3,7 +3,9 @@ import './CSS/Button.css';
 */
 
 button{
-
     position: relative;
+}
 
+button:hover {
+    cursor: pointer;
 }
