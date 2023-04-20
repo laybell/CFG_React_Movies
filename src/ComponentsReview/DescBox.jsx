@@ -7,13 +7,17 @@ function DescBox(props){
 const [rating, setRating] = useState(0)
 
 function minusRating() {
+    if(rating > 0) {
     setRating(prevRating => prevRating -1)
     const trating=rating;
     console.log(rating)
 }
+}
 
 function plusRating() {
+    if(rating < 5) {
     setRating(prevRating => prevRating +1)
+}
 }
 
 function write(){
