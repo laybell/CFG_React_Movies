@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { GlobalContext } from '../context/GlobalState';
 
 //get list of movies from props
 //map function lets you loop over list of movies
 //image displayed using URL as image source
 
 function MovieList(props){
+	const {
+		addMovieToWatchlist
+	} = useContext(GlobalContext);
+
 	return (
 		<>
 			{props.movies.map((movie, index) => (
@@ -16,7 +21,8 @@ function MovieList(props){
 							</div>
 					</div>
 					<div className="controls">
-		<button className="btn">Add to Watchlist</button>
+		<button className="btn"
+		onClick={() => addMovieToWatchlist}>Add to Watchlist</button>
 	</div>
 
 				</div>

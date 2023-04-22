@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { GlobalProvider } from './context/GlobalState';
 
 
 //pages
@@ -11,6 +12,7 @@ import AppReview from './pages/Review';
 
 export default function AppIndex() {
     return (
+      <GlobalProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -21,6 +23,7 @@ export default function AppIndex() {
           </Route>
         </Routes>
       </BrowserRouter>
+      </GlobalProvider>
     );
   }
 
