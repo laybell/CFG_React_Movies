@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Nunito:wght@500&display=swap');
+
 /* App Review Page CSS
 */
 body{
     background: #BB0522;
-    background: -moz-radial-gradient(center, #BB0522 0%, #CB2424 50%, #752C37 100%);
+    /*background: -moz-radial-gradient(center, #BB0522 0%, #CB2424 50%, #752C37 100%);
     background: -webkit-radial-gradient(center, #BB0522 0%, #CB2424 50%, #752C37 100%);
-    background: radial-gradient(ellipse at center, #BB0522 0%, #CB2424 50%, #752C37 100%);
+    background: radial-gradient(ellipse at center, #BB0522 0%, #CB2424 50%, #752C37 100%);*/
+    font-family: 'Nunito', sans-serif;
     }
 
 /* classes */
@@ -29,17 +32,13 @@ body{
     width: 40%;
     height: 30%;
     padding-top: 80px;
-
 }
 
 .top-film{
-
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-decoration:overline underline;
     color:black;
     font-size: medium;
     text-align: center;
-    padding-top: 7%;
 }
 
 
@@ -47,15 +46,40 @@ body{
 nav ul {
     display: flex;
     text-decoration: none;
-    justify-content: space-around;
+    justify-content: right;
+    font-family: 'Dongle', sans-serif;
+    font-size: 35px;
 }
 
 nav ul li, nav ul li a {
     display: flex;
     text-decoration: none;
     color: black;
+    margin-right: 10px;
 }
 
 a:hover {
     color: white;
 }
+
+
+/* Search Box on home page*/
+.searchBox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.inputBox {
+    border: 2px solid green;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Movie List on home page */
+.movieList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-shrink: 1;
+}
+
