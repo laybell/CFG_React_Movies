@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './CSS Comp.Review/SearchBox.css';
+import '../components/CSS/SearchBox.css';
 
 
 function SearchBox(props){
@@ -36,7 +36,6 @@ return(
         <a href='#The Banshees of Inisherin'>Baneshins of Isherin</a>
     </div>
     </div>
-   { /* <button type='submit'class='searchButton' onClick={clicked}>Search</button> */}
 
 </div>
 );

@@ -5,6 +5,7 @@ import {Title} from  "../components/Title.jsx";
 import { SearchBox } from "../components/SearchBox.jsx";
 import { Separator } from "../components/Separator.jsx";
 import { Button } from "../components/Button.jsx";
+import {Footer} from '../components/Footer';
 
 //Poster Images Imports
 import tarzan from '../ImagesReview/tarzan.png';
@@ -16,7 +17,7 @@ import maverick from '../Images/maverick.jpg';
 function Watchlist () {
     return (
         <div className="App">
-             <Title/>
+             <Title title='Watchlist'/>
         <SearchBox/>
         <br/>
         <Thumbnail poster={tarzan} ></Thumbnail>  
@@ -43,6 +44,7 @@ function Watchlist () {
         <Thumbnail poster={maverick}></Thumbnail>
         <DescBox title='Top Gun: Maverick' year='2022'/>
         <Button/>
+        <Footer  />
         </div>
     )
 }

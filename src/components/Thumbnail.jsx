@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import poster from './../ImagesReview/tarzan.png';
+import './CSS/Thumbnail.css';
 
 function Thumbnail(props){
 return(

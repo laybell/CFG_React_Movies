@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
-import './CSS Comp.Review/DescBox.css';
+import '../components/CSS/DescBox.css';
 import { UseLocalStorage } from './UseLocalStorage';
 
 function DescBox(props){
@@ -36,7 +36,7 @@ function plusRating() {
 };
 
 return(
-    <div> 
+    <div class='dimensions'> 
         <h2 id={props.title}>{props.title}</h2>
         <h3>Year: {props.year}</h3>
         <h3>Rating: </h3>

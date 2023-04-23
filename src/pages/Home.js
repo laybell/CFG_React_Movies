@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import MovieList from '../ComponentsReview/MovieList';
-import MovieListHeading from '../ComponentsReview/MovieListHeading';
-import MovieSearchBox from '../ComponentsReview/MovieSearchBox';
-import SearchBox from '../ComponentsReview/MovieSearchBox';
-import AddFavourites from '../ComponentsReview/AddToFavourites';
+import MovieList from '../components/MovieList';
+import MovieListHeading from '../components/MovieListHeading';
+import MovieSearchBox from '../components/MovieSearchBox';
+import SearchBox from '../components/MovieSearchBox';
+import AddFavourites from '../components/AddToFavourites';
+import {Footer} from '../components/Footer';
 
 //API key (allows 1000 searches per day)
 const key='59143cd6';
@@ -36,7 +37,7 @@ const Home = () => {
     return(
         <div className='container-fluid movie-app'>
 			<div className='row d-flex align-items-center mt-4 mb-4'>
-				<MovieListHeading heading='Movies' />
+				<MovieListHeading  heading='Movies' />
 				<SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
 			</div>
 			<div className='row'>
@@ -50,7 +51,9 @@ const Home = () => {
 			</div>
 			<div className='row'>
 				<MovieList movies={favourites} favouriteComponent={AddFavourites} />
+                
 			</div>
+            <Footer  />
 		</div>
     )
   };
