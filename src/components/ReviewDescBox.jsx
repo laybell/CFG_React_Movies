@@ -5,7 +5,7 @@ import { UseLocalStorage } from './UseLocalStorage';
 
 function DescBox(props){
 
-const [opinion, setOpinion] = UseLocalStorage('Opinion', '')
+
 
 //This allows saving of the ratings based on Title name
 const initState = {
@@ -17,7 +17,17 @@ useEffect (() => {
 }, [props.title])
 //
 
-const [rating, setRating] = UseLocalStorage(initState.newTitle[0],0)
+const initOpState = {
+    opinionTitle: [props.title]+'op'
+};
+const [opstate, setOpState] = useState(initOpState)
+useEffect (() => { 
+      setState({ ...opstate, opinionTitle: [props.title] +'op'}) 
+}, [props.title]+'op')
+
+
+const [opinion, setOpinion] = UseLocalStorage(initOpState.opinionTitle, '');
+const [rating, setRating] = UseLocalStorage(initState.newTitle[0],0);
 
 
 function minusRating() {
