@@ -1,11 +1,11 @@
 import {useState} from 'react';
 import './AppReviewCSS.css';
-import { DescBox } from "../ComponentsReview/DescBox.jsx";
-import {Thumbnail} from "../ComponentsReview/Thumbnail.jsx";
-import {Title} from  "../ComponentsReview/Title.jsx";
-import { SearchBox } from "../ComponentsReview/SearchBox.jsx";
-import { Separator } from "../ComponentsReview/Separator.jsx";
-import { Footer } from "../ComponentsReview/Footer.jsx";
+import { DescBox } from "../components/ReviewDescBox.jsx";
+import {Thumbnail} from "../components/Thumbnail.jsx";
+import {Title} from  "../components/Title.jsx";
+import { SearchBox } from "../components/ReviewSearchBox.jsx";
+import { Separator } from "../components/Separator.jsx";
+import {Footer} from '../components/Footer';
 
 //Poster Images Imports
 import tarzan from '../ImagesReview/tarzan.png';
@@ -21,7 +21,7 @@ function AppReview() {
   return (
     <div className="App">
 
-        <Title/>
+        <Title title='Reviews'/>
         <SearchBox/>
         <h1 class='top-film'>Top film is {topMovie}.</h1>
         <div class='central'>
@@ -30,10 +30,10 @@ function AppReview() {
         <br/>
         <Thumbnail poster={tarzan} ></Thumbnail> 
         <br/>
-        <Separator/> 
+        
         <Thumbnail poster={everything}></Thumbnail>  
         <br/>
-        <Separator/>
+        
         <Thumbnail poster={banshees}></Thumbnail>  
         </div>
 
@@ -41,11 +41,11 @@ function AppReview() {
         <br/>
         <DescBox title='Tarzan' year='1999'/>
         <br/>
-        <Separator/>
+        
         <DescBox title='Everything Everywhere All At Once'
         year='2022'/>
         <br/>
-        <Separator/>
+        
         <DescBox title='The Banshees of Inisherin'
         year='2022'/>
         <br/>
@@ -53,7 +53,7 @@ function AppReview() {
         </div>
 
 
-       <Footer date='13th April' />
+       <Footer  />
 
     </div>
   );
