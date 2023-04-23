@@ -17,19 +17,14 @@ function UseLocalStorage(key, initialValue){
         return getSavedValue(key, initialValue)
 
     }   )
-
     //When value changes, this updates hook (needs converting to string)
     useEffect( () => {
         localStorage.setItem(key, JSON.stringify(value))
     }, [value]
-
-
     )
 
 return(
     [value, setValue]
-
-
 );};
 
 export {UseLocalStorage};
