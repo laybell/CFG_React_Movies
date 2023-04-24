@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 
 //pages
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout";
+import Layout from "./pages/Header";
 import Home from "./pages/Home";
 import Watchlist from './pages/Watchlist';
 import AppReview from './pages/Review';

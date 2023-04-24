@@ -4,7 +4,6 @@ import { DescBox } from "../components/ReviewDescBox.jsx";
 import {Thumbnail} from "../components/Thumbnail.jsx";
 import {Title} from  "../components/Title.jsx";
 import { SearchBox } from "../components/ReviewSearchBox.jsx";
-import { Separator } from "../components/Separator.jsx";
 import {Footer} from '../components/Footer';
 
 //Poster Images Imports

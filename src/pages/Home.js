@@ -5,6 +5,7 @@ import MovieSearchBox from '../components/MovieSearchBox';
 import SearchBox from '../components/MovieSearchBox';
 import AddFavourites from '../components/AddToFavourites';
 import {Footer} from '../components/Footer';
+import './App.css';
 
 //API key (allows 1000 searches per day)
 const key='59143cd6';
@@ -35,18 +36,18 @@ const Home = () => {
     },[searchValue]);
 
     return(
-        <div className='container-fluid movie-app'>
-			<div className='row d-flex align-items-center mt-4 mb-4'>
+        <div className='container movie-app'>
+			<div className='row'>
 				<MovieListHeading  heading='Movies' />
 				<SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
 			</div>
-			<div className='row'>
+			<div className='row list-of-movies'>
 				<MovieList movies={movies} 
                 favouriteComponent={AddFavourites} 
                 handleFavouritesClick={addFavouriteMovie}
                 />
 			</div>
-            <div className='row d-flex align-items-center mt-4 mb-4'>
+            <div className='row'>
 				<MovieListHeading heading='Favourites' />
 			</div>
 			<div className='row'>

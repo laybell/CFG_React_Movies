@@ -1,0 +1,9 @@
+.list-of-movies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.search-box {
+    text-align: center;
+}

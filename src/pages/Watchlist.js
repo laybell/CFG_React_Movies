@@ -3,7 +3,6 @@ import { DescBox } from "../components/DescBox.jsx";
 import {Thumbnail} from "../components/Thumbnail.jsx";
 import {Title} from  "../components/Title.jsx";
 import { SearchBox } from "../components/SearchBox.jsx";
-import { Separator } from "../components/Separator.jsx";
 import { Button } from "../components/Button.jsx";
 import {Footer} from '../components/Footer';
 
@@ -24,23 +23,23 @@ function Watchlist () {
         <DescBox title='Tarzan' year='1999'/>
         <Button/>
         <br/>
-        <Separator/>
+ 
         <Thumbnail poster={everything}></Thumbnail>  
         <DescBox title='Everything Everwhere All At Once'
         year='2022'/>
         <Button/>
         <br/>
-        <Separator/>
+    
         <Thumbnail poster={banshees}></Thumbnail>  
         <DescBox title='The Banshees of Inisherin' year='2022'/>
         <Button/>
         <br/>
-        <Separator/>
+     
         <Thumbnail poster={top}></Thumbnail>
         <DescBox title='Top Gun' year='1986'/>
         <Button/>
         <br/>
-        <Separator/>
+    
         <Thumbnail poster={maverick}></Thumbnail>
         <DescBox title='Top Gun: Maverick' year='2022'/>
         <Button/>
