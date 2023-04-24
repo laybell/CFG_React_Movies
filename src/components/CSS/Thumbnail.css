@@ -1,14 +1,11 @@
-/* Thumbnail Poster CSS
-*/
+/* Thumbnail Poster CSS*/
 
-img{
+img {
     border-radius: 10px;
     object-fit: cover;
-    height:300px;
-    width:200px;
+    height: 300px;
+    width: 200px;
     -webkit-box-shadow: 5px 14px 12px 5px rgba(35,2,7,0.43); 
-box-shadow: 5px 14px 12px 5px rgba(35,2,7,0.43);
+    box-shadow: 5px 14px 12px 5px rgba(35,2,7,0.43);
     display: flex;
-    margin: 0 10px;
-    
 }

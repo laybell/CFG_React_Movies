@@ -7,16 +7,16 @@ import React from 'react';
 
 
 function MovieList(props){
-	const FavouriteComponent = props.favouriteComponent;
+	const AddToWatchlistComponent = props.AddToWatchlistComponent;
 	return (
 		<>
 			{props.movies.map((movie, index) => (
-				<div 
-				onClick={() => props.handleFavouritesClick(movie)}
-				className='image-container d-flex justify-content-start m-3'>
-					<img src={movie.Poster} alt='movie'></img>
-					<div className='overlay d-flex align-items-center justify-content-center'>
-						<FavouriteComponent />
+				<div
+				onClick={() => props.handleWatchlistClick(movie)}
+				className='image-container'>
+					<img className='movie-poster' src={movie.Poster} alt='movie'></img>
+					<div className='overlay'>
+						<AddToWatchlistComponent />
 					</div>
 				</div>
 			))}

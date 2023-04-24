@@ -3,9 +3,11 @@ import MovieList from '../components/MovieList';
 import MovieListHeading from '../components/MovieListHeading';
 import MovieSearchBox from '../components/MovieSearchBox';
 import SearchBox from '../components/MovieSearchBox';
-import AddFavourites from '../components/AddToFavourites';
+import AddFavourites from '../components/AddToWatchlist';
 import {Footer} from '../components/Footer';
 import './App.css';
+import AddToWatchlist from '../components/AddToWatchlist';
+import RemoveFromWatchlist from '../components/RemoveFromWatchlist';
 
 //API key (allows 1000 searches per day)
 const key='59143cd6';
@@ -13,7 +15,7 @@ const key='59143cd6';
 const Home = () => {
     const [movies, setMovies]= useState([]);
     const [searchValue, setSearchValue]=useState('');
-    const [favourites, setFavourites] = useState([]);
+    const [watchlist, setWatchlist] = useState([]);
 
     const getMovieRequest = async ()=>{
         const url=`http://www.omdbapi.com/?s=${searchValue}&apikey=${key}`;
@@ -26,10 +28,15 @@ const Home = () => {
         }
     };
 
-    const addFavouriteMovie = (movie) => {
-		const newFavouriteList = [...favourites, movie];
-		setFavourites(newFavouriteList);
+    const addMovieToWatchlist = (movie) => {
+		const newWatchlist = [...watchlist, movie];
+		setWatchlist(newWatchlist);
 	};
+
+    const removeFromWatchlist = (movie) => {
+        const newWatchlist = watchlist.filter((watchlist)=> watchlist.imdbID !== movie.imdbID);
+        setWatchlist(newWatchlist);
+    };
 
     useEffect (() =>{
         getMovieRequest(searchValue);
@@ -41,18 +48,20 @@ const Home = () => {
 				<MovieListHeading  heading='Movies' />
 				<SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
 			</div>
+
 			<div className='row list-of-movies'>
 				<MovieList movies={movies} 
-                favouriteComponent={AddFavourites} 
-                handleFavouritesClick={addFavouriteMovie}
+                AddToWatchlistComponent={AddToWatchlist} 
+                handleWatchlistClick={addMovieToWatchlist}
                 />
 			</div>
+
             <div className='row'>
-				<MovieListHeading heading='Favourites' />
+				<MovieListHeading heading='Watch List' />
 			</div>
+
 			<div className='row'>
-				<MovieList movies={favourites} favouriteComponent={AddFavourites} />
-                
+				<MovieList movies={watchlist} AddToWatchlistComponent={RemoveFromWatchlist} handleWatchlistClick={removeFromWatchlist}/>
 			</div>
             <Footer  />
 		</div>

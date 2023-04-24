@@ -1,9 +1,9 @@
 import React from 'react';
 
-const AddFavourite = () => {
+const AddToWatchlist = () => {
 	return (
 		<>
-			<span className='mr-2'>Add to Favourites</span>
+			<span className='add-to-watchlist'>Add to Watchlist</span>
 			<svg
 				width='1em'
 				height='1em'
@@ -18,4 +18,4 @@ const AddFavourite = () => {
 	);
 };
 
-export default AddFavourite;
+export default AddToWatchlist;
