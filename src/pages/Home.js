@@ -49,7 +49,7 @@ const Home = () => {
 				<SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
 			</div>
 
-			<div className='row list-of-movies'>
+			<div className='row list-of-movies top'>
 				<MovieList movies={movies} 
                 AddToWatchlistComponent={AddToWatchlist} 
                 handleWatchlistClick={addMovieToWatchlist}
@@ -60,7 +60,7 @@ const Home = () => {
 				<MovieListHeading heading='Watch List' />
 			</div>
 
-			<div className='row list-of-movies'>
+			<div className='row list-of-movies watchlist'>
 				<MovieList movies={watchlist} AddToWatchlistComponent={RemoveFromWatchlist} handleWatchlistClick={removeFromWatchlist}/>
 			</div>
             <Footer  />

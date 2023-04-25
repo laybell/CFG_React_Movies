@@ -6,7 +6,7 @@ function Footer(props){
 return(
     <div class='footer'>
 
-    <p class='footerText'>By Katy, Lea and Jessica</p>
+    <p class='footerText'>By Katy, Lea and Jessica.</p>
 
 </div>
 );

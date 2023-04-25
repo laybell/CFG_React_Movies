@@ -5,7 +5,7 @@ function SearchBox(){
 return(
     <div>
 
-    <input type='text' class='dropbar' placeholder='search here...'></input>
+    <input type='text' class='dropbar' placeholder='Search for a movie...'></input>
     { /*<button type='submit'>Search</button>*/}
 </div>
 );

@@ -29,7 +29,7 @@ return(
 
 <div class='SearchBox'>
     <div class='dropdown'>
-    <input id='myInput' type='text' class='dropbar' placeholder='search here...' onKeyUp={filterFunction}></input>
+    <input id='myInput' type='text' class='dropbar' placeholder='Search for a movie...' onKeyUp={filterFunction}></input>
     <div id='hideDropdown'class='dropdown-content'> 
         <a href='#Tarzan'>Tarzan</a>
         <a href='#Everything Everywhere All At Once'>Everything Evewhere All At Once</a>

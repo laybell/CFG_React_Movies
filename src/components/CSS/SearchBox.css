@@ -3,10 +3,10 @@
 import './CSS Comp.Review/SearchBox.css';
 */
 
-
 .SearchBox{
     text-align: center;
-    padding-top: 5%;
+    
+    
 }
 
 .searchButton{
@@ -23,11 +23,10 @@ import './CSS Comp.Review/SearchBox.css';
 }
 
 .dropbar{
-    background-color: #e6d2db;
     color: rgb(66, 48, 48);
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+    border: 2px solid black;
+    width: 250px;
+    text-align: center;
 }
 
 .dropdown-content{

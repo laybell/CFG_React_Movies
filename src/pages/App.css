@@ -1,7 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Nunito:wght@500&display=swap');
+
+/* Body styling */
+body {
+ background-color: #bb0522;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    font-family: 'Dongle', sans-serif;
+    font-size: 32px;
+    margin-top: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    list-style: none;
+    margin-right: 20px;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: black;
+    text-shadow: 1px 1px rgb(0, 0, 0, 0.3);
+}
+
+/* Movie list under Movie header */
 .list-of-movies {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-shrink: 1;
 }
 
 .movie-poster {
@@ -9,10 +40,10 @@
     margin: 10px 10px;
 }
 
-.search-box {
-    text-align: center;
-}
+/* Watchlist */
 
+
+/* Pop up when you hover over the movies */
 .image-container {
     position: relative;
     transition: transform 0.2s;
@@ -40,3 +71,39 @@
     text-align: center;
     color: white;
 }
+
+/* Movie search box */
+.search-box, .SearchBox{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    width: 250px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Dongle', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+p, .search-box, span {
+    font-family: 'Nunito', sans-serif;
+}
+
+.top {
+    margin-bottom: 30px;
+}
+
+h2, h3{
+    font-family: 'Dongle', sans-serif;
+    font-size: 20px;
+}
+
