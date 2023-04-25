@@ -22,7 +22,7 @@ function AppReview() {
 
         <Title title='Reviews'/>
         <SearchBox/>
-        <h1 class='top-film'>Top film is {topMovie}.</h1>
+        {/*<h1 class='top-film'>Top film is {topMovie}.</h1> */}
         <div class='central'>
         <br/>
         <div class='LHS'>
