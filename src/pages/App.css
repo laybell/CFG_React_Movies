@@ -37,7 +37,7 @@ nav ul li a:hover {
 
 .movie-poster {
     display: flex;
-    margin: 10px 10px;
+    margin: 25px 15px;
 }
 
 /* Watchlist */
@@ -45,6 +45,8 @@ nav ul li a:hover {
 
 /* Pop up when you hover over the movies */
 .image-container {
+    display: flex;
+    justify-content: center;
     position: relative;
     transition: transform 0.2s;
 }
@@ -56,17 +58,20 @@ nav ul li a:hover {
 
 .image-container:hover .overlay {
     opacity: 1;
+    width: 160px;
+    border-radius: 25px;
+    padding: 10px;
 }
 
 .overlay {
     position: absolute;
     margin: 0 auto;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.7);
     width: 80%;
     transition: ease-in;
     opacity: 0;
     bottom: 0;
-    font-size: 20px;
+    font-size: 18px;
     padding: 20px;
     text-align: center;
     color: white;
