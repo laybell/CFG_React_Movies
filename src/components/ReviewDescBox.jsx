@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import '../components/CSS/DescBox.css';
 import { UseLocalStorage } from './UseLocalStorage';
+import '../pages/App.css'
 
 function DescBox(props){
 
@@ -49,11 +50,11 @@ return(
     <div class='dimensions'> 
         <h2 id={props.title}>{props.title}</h2>
         <h3>Year: {props.year}</h3>
-        <h3>Rating: </h3>
+        <h3>Rating:</h3>
                     
         <button onClick={minusRating}>-</button>
         
-        <input
+        <input className='plus-rating'
             type='text'
             value={rating}
             onChange={e => 
