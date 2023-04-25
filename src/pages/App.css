@@ -132,3 +132,27 @@ button {
 }
 
 /* Top film section on review page*/
+
+
+/* Submit button on review page */
+#submit-button {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: white;
+    margin: 0 auto;
+    font-family: 'Dongle', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#submit-button:hover {
+    background-color: rgb(179, 177, 177);
+}
+
+#submit-button:active {
+    background-color: rgb(132, 130, 130);
+}

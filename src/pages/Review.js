@@ -51,6 +51,7 @@ function AppReview() {
         </div>
         </div>
 
+        <button id='submit-button'>Submit</button>
 
        <Footer  />
 
