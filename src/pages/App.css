@@ -92,6 +92,7 @@ input {
     text-align: center;
 }
 
+/* Review page */
 h1 {
     font-family: 'Dongle', sans-serif;
     font-size: 50px;
@@ -109,11 +110,12 @@ p, .search-box, span {
 
 h2, h3{
     font-family: 'Dongle', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
+    margin: 0;
 }
 
-
-.plus-rating {
+/* Rating buttons on review page */
+.rating {
     background-color: transparent;
     border: none;
     width: 10px;
@@ -128,3 +130,5 @@ button {
     cursor: pointer;
     font-size: 20px;
 }
+
+/* Top film section on review page*/

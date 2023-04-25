@@ -54,7 +54,7 @@ return(
                     
         <button onClick={minusRating}>-</button>
         
-        <input className='plus-rating'
+        <input className='rating'
             type='text'
             value={rating}
             onChange={e => 
@@ -63,7 +63,7 @@ return(
         <button onClick={plusRating}>+</button>
 
         <h3>Opinion:</h3>
-        <input
+        <input className='opinion-box'
             type='text'
             value={opinion}
             onChange={e => setOpinion(e.target.value)}
