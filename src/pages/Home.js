@@ -60,7 +60,7 @@ const Home = () => {
 				<MovieListHeading heading='Watch List' />
 			</div>
 
-			<div className='row'>
+			<div className='row list-of-movies'>
 				<MovieList movies={watchlist} AddToWatchlistComponent={RemoveFromWatchlist} handleWatchlistClick={removeFromWatchlist}/>
 			</div>
             <Footer  />
