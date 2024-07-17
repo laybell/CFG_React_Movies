@@ -1,3 +1,9 @@
+# CFG React Project
+
+This is a CFG group mini-project following the basics of Javascript using React. This app enables you to add movies to a watchlist and locally store movie ratings.
+
+---------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
